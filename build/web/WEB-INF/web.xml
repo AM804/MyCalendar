@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.example.web.Register</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.example.web.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.example.web.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Share_do</servlet-name>
+        <servlet-class>com.example.web.Sharing</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>events_do</servlet-name>
+        <servlet-class>com.example.web.events_do</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>test_do</servlet-name>
+        <servlet-class>com.example.web.Test</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Refresh</servlet-name>
+        <servlet-class>com.example.web.Refresh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Regi</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>events_do</servlet-name>
+        <url-pattern>/events.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>test_do</servlet-name>
+        <url-pattern>/test.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Share_do</servlet-name>
+        <url-pattern>/share.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Refresh</servlet-name>
+        <url-pattern>/Refresh</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>
+com.example.web.listen
+</listener-class>
+    </listener>
+</web-app>
